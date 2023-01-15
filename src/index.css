@@ -1,0 +1,139 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  /*width: 90vw;*/
+  height: 100vh;
+  overflow: hidden;
+  /*background-size: 100% 100%;*/
+  background: rgb(173,238,227);
+  background: linear-gradient(317deg, rgba(173,238,227,1) 0%, rgba(173,238,227,1) 0%, rgba(134,222,183,1) 36%, rgba(99,185,149,1) 94%);
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+/*.app{*/
+/*  width:100vw;*/
+/*  height:100vh ;*/
+/*}*/
+
+.main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.killed{
+  scale: 75%;
+}
+.container{
+  margin: 0;
+}
+button{
+  background: none;
+}
+h1{
+  background-image: url("png/Agnes.png");
+  background-image: url("png/Perez.png");
+  background-image: url("png/Kevin.png");
+  background-image: url("png/Young_gru.png");
+}
+.game{
+  min-height: 376px;
+}
+.bw{
+  max-width: 384px;
+}
+.bb{
+  min-width: 384px;
+}
+.game-board{
+  /*height: calc(6vh*8);*/
+  width: calc(48px*8);
+}
+.game div{
+  float:left
+}
+.board-row-white{
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  /*margin: 0px -5px 0 -5px;*/
+}
+.board-row-black{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0px -5px 0 -5px;
+}
+.ex{
+  /*position: absolute;*/
+  margin-left: -40px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: transparent;
+  border: 1px solid transparent;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  /*height: 200%;*/
+  /*width: 200%;*/
+  height: 48px;
+  width: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  /*background: #ddd;*/
+}
+
+.game-info {
+  margin-left: 20px;
+  position: absolute;
+  top:80%;
+}
+
+
+.icons-attribution, .game-status, .fallen-soldier-block{
+  /*margin-top: 20px;*/
+  /*min-height: 50px;*/
+}
+
+
+/*Board color scheme Wheat from http://omgchess.blogspot.com/2015/09/chess-board-color-schemes.html*/
+.dark-square{
+  background-color: #76CDA7;
+}
+
+.light-square{
+    background-color: #5EA385;
+}
+
+#player-turn-box{
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+h3{
+  margin: 0 0 5px 0;
+}
